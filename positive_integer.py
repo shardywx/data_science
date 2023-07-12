@@ -12,3 +12,6 @@ def solution(A):
                 break
         if found == False:
             return i
+
+array = [1,2,3,4,6,1]
+print(solution(array))
