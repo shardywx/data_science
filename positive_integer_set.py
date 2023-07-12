@@ -1,16 +1,21 @@
 from typing import List
 
-def solution(A: List):
+def solution(integer_array: List):
     """
     Find the smallest positive integer that doesn't exist in an array 
     """
-    n = len(A)
-    dict = set(A)
+    n = len(integer_array)
+    dict = set(integer_array)
     for i in range(1, n+2):
         if i not in dict:
             return i
         
-if __name__ == "__main__":
-    array = [1,2,3,5,1,-5,-2,7]
-    smallest_integer = solution(array)
+def main(integer_array: List):
+    """
+    Entry point function for the code above
+    """
+    smallest_integer = solution(integer_array)
     print(smallest_integer)
+
+if __name__ == "__main__":
+    main()
