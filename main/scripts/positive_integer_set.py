@@ -15,7 +15,7 @@ def main(integer_array: List):
     Entry point function for the code above
     """
     smallest_integer = solution(integer_array)
-    print(smallest_integer)
+    return smallest_integer
 
 if __name__ == "__main__":
     main()
